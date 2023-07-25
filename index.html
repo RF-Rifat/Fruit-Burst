@@ -26,46 +26,18 @@
   </head>
   <body>
     <!-- header section start -->
-    <header class="">
+    <header>
       <!-- navbar start -->
       <nav class="lg:mx-28 lg:my-5">
-        <div class="navbar lg:bg-[#f85559] rounded-full lg:px-5 flex-row-reverse lg:flex-row">
-            <div class="flex flex-1 justify-end">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-8 w-8"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                </label>
-              </div>
-              <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-white">
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-            </div>
-            <a class="btn btn-ghost normal-case text-xl h-auto flex-1 justify-center">
-            <img src="images/logo.png" alt="logo"> <span class="text-2xl lg:text-4xl font-extrabold lg:text-white">Fruit Burst</span></a>
-            <!-- searchbar -->
-            <div class="navbar-end hidden md:hidden lg:flex flex-1">
-              <div class="form-control relative">
+        <div
+          class="navbar lg:bg-[#f85559] rounded-full lg:px-5 flex-row-reverse lg:flex-row"
+        >
+          <div class="flex flex-1 justify-end">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 search-icon absolute top-4 right-4 text-gray-500"
+                  class="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -74,19 +46,124 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    d="M4 6h16M4 12h8m-8 6h16"
                   />
                 </svg>
-                <input
-                  type="text"
-                  placeholder="Search"
-                  class="input input-bordered w-24 md:w-auto rounded-full"
-                />
-              </div>
+              </label>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
           </div>
+          <a
+            class="btn btn-ghost normal-case text-xl h-auto flex-1 justify-center"
+          >
+            <img src="images/logo.png" alt="logo" />
+            <span class="text-2xl lg:text-4xl font-extrabold lg:text-white"
+              >Fruit Burst</span
+            ></a
+          >
+          <!-- searchbar -->
+          <div class="navbar-end hidden md:hidden lg:flex flex-1">
+            <div class="form-control relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 search-icon absolute top-4 right-4 text-gray-500"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered w-24 md:w-auto rounded-full"
+              />
+            </div>
+          </div>
+        </div>
       </nav>
       <!-- navbar end -->
+      <!-- banner with overlay -->
+      <section class="mx-6 lg:mx-32">
+        <div class="carousel w-full rounded-2xl">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero bg-[url('images/banner1.png')]">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="bg-[#f85559] btn btn-error border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-[url('images/banner2.png')]">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="bg-[#f85559] btn btn-error border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-[url('images/banner3.png')]">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="bg-[#f85559] btn btn-error border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero min-h-screen bg-[url('images/banner4.png')]">
+              <div class="hero-overlay bg-opacity-40"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="bg-[#f85559] btn btn-error border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- header section end -->
   </body>
