@@ -102,11 +102,11 @@
             <div class="hero bg-[url('images/banner1.png')]">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">
+                <div class="max-w-md space-y-4 my-36">
+                  <h1 class="text-5xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
+                  <p>We supply highly quality organic products</p>
                   <button
                     class="bg-[#f85559] btn btn-error border-0 text-white"
                   >
@@ -123,14 +123,14 @@
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <div class="hero min-h-screen bg-[url('images/banner2.png')]">
-              <div class="hero-overlay bg-opacity-40"></div>
+            <div class="hero bg-[url('images/banner2.png')]">
+              <div class="hero-overlay bg-opacity-50"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">
+                <div class="max-w-md space-y-4 my-36">
+                  <h1 class="text-5xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
+                  <p>We supply highly quality organic products</p>
                   <button
                     class="bg-[#f85559] btn btn-error border-0 text-white"
                   >
@@ -147,14 +147,14 @@
             </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <div class="hero min-h-screen bg-[url('images/banner3.png')]">
+            <div class="hero bg-[url('images/banner3.png')]">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">
+                <div class="max-w-md space-y-4 my-36">
+                  <h1 class="text-5xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
+                  <p>We supply highly quality organic products</p>
                   <button
                     class="bg-[#f85559] btn btn-error border-0 text-white"
                   >
@@ -171,14 +171,14 @@
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <div class="hero min-h-screen bg-[url('images/banner4.png')]">
+            <div class="hero bg-[url('images/banner4.png')]">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md">
-                  <h1 class="mb-5 text-5xl font-bold">
+                <div class="max-w-md space-y-4 my-36">
+                  <h1 class="text-5xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
-                  <p class="mb-5">We supply highly quality organic products</p>
+                  <p>We supply highly quality organic products</p>
                   <button
                     class="bg-[#f85559] btn btn-error border-0 text-white"
                   >
@@ -192,6 +192,32 @@
             >
               <a href="#slide3" class="btn btn-circle">❮</a>
               <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative -top-28 hidden lg:block text-dark-2">
+        <div class="container">
+          <div class="bg-white shadow-lg shadow-gray-300 p-8 rounded-xl grid grid-cols-5 gap-8 justify-between items-center w-4/5 mx-auto">
+            <div class="flex flex-col items-center gap-1">
+              <img src="images/fruit1.png" alt="Blackberry">
+              <span>Blackberry</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <img src="images/fruit2.png" alt="Orange">
+              <span>Orange</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <img src="images/fruit3.png" alt="Mango">
+              <span>Mango</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <img src="images/fruit4.png" alt="Strawberry">
+              <span>Strawberry</span>
+            </div>
+            <div class="flex flex-col items-center gap-1">
+              <img src="images/fruit5.png" alt="Pomegranate">
+              <span>Pomegranate</span>
             </div>
           </div>
         </div>
@@ -292,8 +318,10 @@
       <!-- offer section -->
 
       <!-- offer card -->
+
       <section class="mx-6 lg:mx-32">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- card-1 -->
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -330,11 +358,57 @@
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
-              <div class="card-actions">
-                <a class="text-red-700">Details</a>
+              <div class="card-actions cursor-pointer">
+                <a class="text-red-700" onclick="modal_1.showModal()">Details</a>
               </div>
             </div>
           </div>
+          <!-- card-1 -->
+          <!-- card-1 -modal -->
+        <dialog id="modal_1" class="modal">
+          <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-4">
+              <h2 class="card-title border-b-[1px]">12.90$ - 18.85$</h2>
+              <p>Apple</p>
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+                <input
+                  type="radio"
+                  name="rating-1"
+                  class="mask mask-star-2 bg-orange-400"
+                />
+            </div>
+            <div class="flex justify-center items-center gap-4">
+              <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white hover:bg-accent hover:text-white hover:border-accent" onclick="modal_1.close()">Close</a>
+              <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white">Buy Now</a>
+            </div>
+          </form>
+        </dialog>
+          <!-- card-1 -modal end -->
+
+          <!-- card-2 -->
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
@@ -370,11 +444,58 @@
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
-              <div class="card-actions">
-                <a class="text-red-700">Details</a>
+              <div class="card-actions cursor-pointer">
+                <a class="text-red-700" onclick="modal_2.showModal()">Details</a>
               </div>
             </div>
           </div>
+          <!-- card-2 -->
+          <!-- card-2-modal -->
+          <dialog id="modal_2" class="modal">
+            <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+              <img src="images/fruit7.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center gap-4">
+                <h2 class="card-title border-b-[1px]">12.90$ - 18.85$</h2>
+                <p>Orange</p>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+              </div>
+              <div class="flex justify-center items-center gap-4">
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white hover:bg-accent hover:text-white hover:border-accent" onclick="modal_2.close()">Close</a>
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white">Buy Now</a>
+              </div>
+            </form>
+          </dialog>
+          <!-- card-2-modal end -->
+
+
+          <!-- card-3 -->
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
@@ -411,10 +532,55 @@
                 />
               </div>
               <div class="card-actions">
-                <a class="text-red-700">Details</a>
+                <a class="text-red-700 cursor-pointer" onclick="modal_3.showModal()">Details</a>
               </div>
             </div>
           </div>
+          <!-- card-3 -->
+          <!-- card-3-modal -->
+          <dialog id="modal_3" class="modal">
+            <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+              <img src="images/fruit8.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center gap-4">
+                <h2 class="card-title border-b-[1px]">12.90$ - 18.85$</h2>
+                <p>Red Dragon</p>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+              </div>
+              <div class="flex justify-center items-center gap-4">
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white hover:bg-accent hover:text-white hover:border-accent" onclick="modal_3.close()">Close</a>
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white">Buy Now</a>
+              </div>
+            </form>
+          </dialog>
+          <!-- card-3-modal end -->
+          <!-- card-4 -->
           <div class="card bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
@@ -451,10 +617,54 @@
                 />
               </div>
               <div class="card-actions">
-                <a class="text-red-700">Details</a>
+                <a class="text-red-700 cursor-pointer" onclick="modal_4.showModal()">Details</a>
               </div>
             </div>
           </div>
+          <!-- card-4 end -->
+          <!-- card-4-modal -->
+          <dialog id="modal_4" class="modal">
+            <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+              <img src="images/fruit9.png" alt="" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center gap-4">
+                <h2 class="card-title border-b-[1px]">12.90$ - 18.85$</h2>
+                <p>Banana</p>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+              </div>
+              <div class="flex justify-center items-center gap-4">
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white hover:bg-accent hover:text-white hover:border-accent" onclick="modal_4.close()">Close</a>
+                <a href="#/" class="bg-[#f85559] btn btn-error border-0 text-white">Buy Now</a>
+              </div>
+            </form>
+          </dialog>
+          <!-- card-4-modal end -->
         </div>
         <div class="grid place-items-center my-12">
           <button class="bg-[#f85559] btn btn-error border-0 text-white">
@@ -911,7 +1121,7 @@
 
       <!-- Service Section -->
       <section>
-        <div class="text-center space-y-6 mt-6">
+        <div class="text-center space-y-6 my-10">
           <h2 class="text-3xl font-extrabold">Why Choose Us</h2>
           <p>
             Contrary to popular belief, is not simply random text. It has roots
@@ -920,19 +1130,25 @@
           </p>
         </div>
 
-        <!--left content -->
-        <div>
-          <div>
-            <div class="flex">
+        <div
+          class="flex xl:gap-x-16 lg:h-full lg:mx-32 flex-col lg:flex-row items-center"
+        >
+          <!--left content -->
+          <div class="px-6 flex-1 lg:order-2">
+            <img src="images/whychoose1.png" alt="" class="w-full" />
+          </div>
+          <!-- middle content -->
+          <div class="grid px-6 flex-1">
+            <div class="flex gap-2">
               <div>
                 <img
                   src="images/icons/people.png"
                   alt=""
-                  class="bg-slate-300 rounded-full p-2"
+                  class="bg-slate-300 rounded-full p-2 mt-4 w-full"
                 />
               </div>
-              <div class="">
-                <h2 class="text-2xl">Dedicated Team</h2>
+              <div class="space-y-2">
+                <h2 class="text-2xl font-bold">Dedicated Team</h2>
                 <hr class="border-black border-y-[1px] w-1/4" />
                 <p>
                   Professional employees are there for you to pick the most
@@ -940,16 +1156,16 @@
                 </p>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex gap-2">
               <div>
                 <img
-                  src="images/icons/people.png"
+                  src="images/icons/hearts.png"
                   alt=""
-                  class="bg-slate-300 rounded-full p-2"
+                  class="bg-slate-300 rounded-full p-2 mt-4"
                 />
               </div>
-              <div class="">
-                <h2 class="text-2xl">Dedicated Team</h2>
+              <div class="space-y-2">
+                <h2 class="text-2xl font-bold">Fresh is Best</h2>
                 <hr class="border-black border-y-[1px] w-1/4" />
                 <p>
                   Professional employees are there for you to pick the most
@@ -957,16 +1173,16 @@
                 </p>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex gap-2">
               <div>
                 <img
-                  src="images/icons/people.png"
+                  src="images/icons/gift-box.png"
                   alt=""
-                  class="bg-slate-300 rounded-full p-2"
+                  class="bg-slate-300 rounded-full p-2 mt-4"
                 />
               </div>
-              <div class="">
-                <h2 class="text-2xl">Dedicated Team</h2>
+              <div class="space-y-2">
+                <h2 class="text-2xl font-bold">Gift Certificates</h2>
                 <hr class="border-black border-y-[1px] w-1/4" />
                 <p>
                   Professional employees are there for you to pick the most
@@ -975,9 +1191,104 @@
               </div>
             </div>
           </div>
+          <!-- right -->
+          <div class="grid px-6 flex-1 lg:order-3">
+            <div class="flex gap-2">
+              <div class="flex flex-col text-right">
+                <h2 class="text-2xl font-bold">Integrated Supplier</h2>
+                <hr class="border-black border-y-[1px] w-1/4 ml-auto" />
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="images/icons/fruit.png"
+                  alt=""
+                  class="bg-slate-300 rounded-full mt-2 p-2"
+                />
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="flex flex-col text-right">
+                <h2 class="text-2xl font-bold">Sustainable Practice</h2>
+                <hr class="border-black border-y-[1px] w-1/4 ml-auto" />
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="images/icons/ice-cream.png"
+                  alt=""
+                  class="bg-slate-300 rounded-full mt-2 p-2"
+                />
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="flex flex-col text-right">
+                <h2 class="text-2xl font-bold">The Benefits Only</h2>
+                <hr class="border-black border-y-[1px] w-1/4 ml-auto" />
+                <p>
+                  Professional employees are there for you to pick the most
+                  amazing and fresh fruits.
+                </p>
+              </div>
+              <div>
+                <img
+                  src="images/icons/like.png"
+                  alt=""
+                  class="bg-slate-300 rounded-full mt-2 p-2"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Service Section end -->
     </main>
+
+    <footer
+      class="mt-12 lg:mt-20 py-12 lg:py-20 bg-title text-white text-center bg-black"
+    >
+      <div class="container space-y-8">
+        <a href="#home" class="flex items-center justify-center gap-2">
+          <img src="images/logo.png" alt="Logo Icon" class="w-10" />
+          <span class="text-2xl font-bold">Fruit Burst</span>
+        </a>
+        <ul class="flex flex-wrap gap-6 justify-center items-center">
+          <li><a class="hover:text-accent">Home</a></li>
+          <li><a class="hover:text-accent">About Us</a></li>
+          <li><a href="" class="hover:text-accent">Shop</a></li>
+          <li>
+            <a class="hover:text-accent">All Fruits</a>
+          </li>
+          <li><a class="hover:text-accent">Support</a></li>
+          <li><a class="hover:text-accent">My Account</a></li>
+        </ul>
+        <ul class="flex flex-wrap gap-6 justify-center items-center text-3xl">
+          <li>
+            <a href="https://github.com/RF-Rifat"><img src="images/footer-icon/github.png" alt="" class="hover:scale-110" /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/rfrifat6344/"><img src="images/footer-icon/facebook.png" alt="" class="hover:scale-110"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/footer-icon/whatsapp.png" alt="" class="hover:scale-110"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/footer-icon/messenger.png" alt="" class="hover:scale-110"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/footer-icon/instagram.png" alt="" class="hover:scale-110"/></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/footer-icon/linkedin.png" alt="" class="hover:scale-110"/></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
