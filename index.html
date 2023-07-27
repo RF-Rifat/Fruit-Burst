@@ -33,24 +33,35 @@
           class="navbar lg:bg-[#f85559] rounded-full lg:px-5 flex-row-reverse lg:flex-row"
         >
           <div class="flex flex-1 justify-end">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-8 w-8"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-            </div>
+            <!-- dropdown -->
+            <div class="dropdown dropdown-bottom dropdown-end">
+                <label
+                  tabindex="0"
+                  class="btn btn-ghost btn-circle text-white border-none lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                      d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </label>
+    
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-white">
                 <li><a>Home</a></li>
@@ -102,8 +113,8 @@
             <div class="hero bg-[url('images/banner1.png')]">
               <div class="hero-overlay bg-opacity-40"></div>
               <div class="hero-content text-center text-neutral-content">
-                <div class="max-w-md space-y-4 my-36">
-                  <h1 class="text-5xl font-bold">
+                <div class="max-w-md space-y-4 lg:my-36">
+                  <h1 class="lg:text-5xl text-3xl font-bold">
                     Exotic tastes at your doorstep
                   </h1>
                   <p>We supply highly quality organic products</p>
@@ -201,7 +212,7 @@
       <!-- bonus section -->
       <section class="relative -top-28 hidden lg:block mx-6 lg:mx-32">
         <div>
-          <div class="bg-white shadow-lg shadow-gray-300 p-8 rounded-xl grid grid-cols-5 gap-8 justify-between items-center w-4/5 mx-auto">
+          <div class="bg-white shadow-lg shadow-gray-300 p-8 rounded-xl grid grid-flow-col gap-8 justify-between items-center w-4/5 mx-auto">
             <div class="flex flex-col items-center gap-1">
               <img src="images/fruit1.png" alt="Blackberry">
               <span>Blackberry</span>
@@ -371,8 +382,9 @@
           <!-- card-1 -modal -->
         <dialog id="modal_1" class="modal">
           <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+          <div>
             <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
-            </figure>
+           </div>
             <div class="card-body items-center text-center gap-4">
               <h2 class="card-title border-b-[1px]">12.90$ - 18.85$</h2>
               <p>Apple</p>
@@ -457,6 +469,7 @@
           <!-- card-2-modal -->
           <dialog id="modal_2" class="modal">
             <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+            <figure>
               <img src="images/fruit7.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center gap-4">
@@ -544,6 +557,7 @@
           <!-- card-3-modal -->
           <dialog id="modal_3" class="modal">
             <form method="dialog" class="modal-box flex flex-col justify-center items-center gap-4">
+            <figure>
               <img src="images/fruit8.png" alt="" class="rounded-xl" />
               </figure>
               <div class="card-body items-center text-center gap-4">
